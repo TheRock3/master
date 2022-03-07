@@ -46,12 +46,7 @@ namespace HelloWorld
                     Cell tableName = worksheet.Cell(i, 0);
                     //string Sql = "select count(*) from ";
                     string Sql = "select EMPL_CODE,CO from H_LEAVE order by empl_code ";
-                    //Sql += tableName;
-                    //string conn = "Data Source=(DESCRIPTION=(CID=GTU_APP)(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.4.84)(PORT=1525)))(CONNECT_DATA=(SID=HDNPRD)(SERVER=DEDICATED)));User ID=HOBRS;Password=U4cU$u8nK8;Unicode=True;Min Pool Size=0;Max Pool Size=32767;Pooling=true;";
-                    //string conn = "Data Source=(DESCRIPTION=(CID=GTU_APP)(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.3.4.84)(PORT=1525)))(CONNECT_DATA=(SID=HDNPRD)(SERVER=DEDICATED)));User ID=HHSTAX;Password=Y9pYTq8Gxs;Unicode=True;Min Pool Size=0;Max Pool Size=32767;Pooling=true;";
-                    //string conn = " Data Source = azSqlprod.1ab2bb1454bc.database.windows.net;initial catalog=PHNRBRS;persist security info=True; User ID = PHNRBRS; Password = Phnrbrs#123;";
-                    string conn = " Data Source = azsqlnonprd.0edb30886857.database.windows.net;initial catalog=DHNPMS;persist security info=True; User ID = DHNPMS; Password = Dhnpms#123;";
-                       //(DESCRIPTION = (CID = GTU_APP)(ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.3.4.84)(PORT = 1525)))(CONNECT_DATA = (SID = HDNPRD)(SERVER = DEDICATED)));
+                    string conn = "";
                     using (SqlConnection con = new SqlConnection(conn))
                     {
                         try
